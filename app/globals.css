@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #121212;
+    color: #FFFFFF;
+}
+/* color palette: 
+    1. Primary bg color: #121212
+    2. Secondary bg color: #101010
+    3. Accent Color: #008C7A, #FF6F61
+    4. Text color: #E0E0E0, #FFFFFF, #B0B0B0
+    5. Background elements: #0D1B2A
+    6. Divider and Borders: #2E2E2E
+*/
