@@ -1,39 +1,15 @@
-import React from 'react'
 import Image from 'next/image'
-import logo from '@/components/assets/logo.png'
+import React from 'react'
+import Sidebar from '@/components/Sidebar'
 
 const page = () => {
     return (
         <div className='bg-black h-screen flex justify-center items-center '>
-            <div className='border-r border-[#2E2E2E] h-full px-10 py-12 w-[20rem] flex justify-between border items-start flex-col space-y-20'>
-                <Image className='invert h-10 w-[120px]' src={logo} alt="Logo" />
-                <div className='flex flex-col h-[70%] justify-between'>
-                    <div className='flex flex-col h-full justify-start space-y-7'>
-                        <div className='font-bold text-[17px]'>
-                            <span>Home</span>
-
-                        </div>
-                        <div className='font-bold text-[17px]'>
-                            <span>Search</span>
-
-                        </div>
-                        <div className='font-bold text-[17px]'>
-                            <span>Messages</span>
-
-                        </div>
-                        <div className='font-bold text-[17px]'>
-                            <span>Profile</span>
-
-                        </div>
-                    </div>
-                    <div className='font-bold text-[17px]'>
-                        <span>More</span>
-
-                    </div>
+            <Sidebar />
+            <div className='h-full w-full flex justify-center items-end pb-10'>
+                <div className='border bg-[#0a0a0a] border-[#2E2E2E] flex flex-col items-start rounded-2xl py-2 px-3 w-1/2 '>
+                    <input placeholder='Express your thought...' className='w-full placeholder-neutral-500 text-[18px] bg-transparent px-2 py-1 outline-none' type="text" />
                 </div>
-            </div>
-            <div className='h-full w-full'>
-
             </div>
         </div>
     )
