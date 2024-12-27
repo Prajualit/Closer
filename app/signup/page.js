@@ -7,10 +7,10 @@ import { useForm } from "react-hook-form"
 const Page = () => {
 
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    
+
     const onSubmit = (data) => {
         console.log(JSON.stringify(data))
-        reset(); // Clear the form after submission
+        reset();
     }
 
     return (
