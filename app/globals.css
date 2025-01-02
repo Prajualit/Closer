@@ -2,10 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     background-color: #121212;
     color: #FFFFFF;
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #4a4a4a #0a0a0a;
+    /* Thumb color | Track color */
 }
+
+/* For WebKit browsers like Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 8px;
+    /* Scrollbar width */
+    height: 8px;
+    /* Horizontal scrollbar height */
+}
+
+body::-webkit-scrollbar-track {
+    background: #0a0a0a;
+    /* Track background color */
+    border-radius: 4px;
+    /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    /* Thumb color */
+    border-radius: 4px;
+    /* Rounded corners */
+    border: 2px solid #0a0a0a;
+    /* Creates a gap between thumb and track */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #6a6a6a;
+    /* Slightly lighter color on hover */
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: #8a8a8a;
+    /* Even lighter color when active (dragging) */
+}
+
 /* color palette: 
     1. Primary bg color: #121212
     2. Secondary bg color: #101010
